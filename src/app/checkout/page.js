@@ -2,10 +2,9 @@
 
 import React, { useState } from 'react';
 import Footer from '@/components/Footer';
-import PageHeader from '@/components/PageHeader';
 import { useCart } from '@/context/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CreditCard, CheckCircle, ArrowLeft, ShoppingBag, Package, MapPin, Truck } from 'lucide-react';
+import { CreditCard, CheckCircle, ShoppingBag, Package, MapPin, Truck } from 'lucide-react';
 import Link from 'next/link';
 
 export default function CheckoutPage() {
