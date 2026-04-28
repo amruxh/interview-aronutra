@@ -67,11 +67,11 @@ export default function CartPage() {
                     exit={{ opacity: 0, x: 20 }}
                     className="glass-panel p-4 md:p-6 rounded-xl flex flex-col sm:flex-row items-center gap-6 md:gap-8 border-t border-white/5"
                   >
-                    <div className="relative w-full sm:w-32 aspect-square rounded-lg overflow-hidden flex-shrink-0">
+                    <div className="relative w-full sm:w-32 aspect-square rounded-lg overflow-hidden shrink-0">
                       <Image src={item.image} alt={item.name} fill className="object-cover" />
                     </div>
                     
-                    <div className="flex-grow w-full text-center sm:text-left">
+                    <div className="grow w-full text-center sm:text-left">
                       <h3 className="font-headline-md text-lg md:text-headline-md text-[#D4AF37] mb-1">{item.name}</h3>
                       <p className="font-body-md text-sm md:text-body-md text-on-surface-variant mb-4">${item.price.toLocaleString()}</p>
                       
@@ -109,7 +109,7 @@ export default function CartPage() {
                     <span>Shipping</span>
                     <span>Complimentary</span>
                   </div>
-                  <div className="h-[1px] bg-white/5 my-4"></div>
+                  <div className="h-px bg-white/5 my-4"></div>
                   <div className="flex justify-between font-headline-md text-lg md:text-headline-md">
                     <span>Total</span>
                     <span className="text-primary-container">${cartTotal.toLocaleString()}</span>

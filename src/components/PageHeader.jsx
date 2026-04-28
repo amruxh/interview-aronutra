@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function PageHeader({ title, subtitle }) {
   return (
-    <div className="pt-24 md:pt-32 pb-8 md:pb-12 px-6 md:px-16 text-center border-b border-white/5 bg-gradient-to-b from-surface-container-low to-surface">
+    <div className="pt-24 md:pt-32 pb-8 md:pb-12 px-6 md:px-16 text-center border-b border-white/5 bg-linear-to-b from-surface-container-low to-surface">
       <motion.span 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

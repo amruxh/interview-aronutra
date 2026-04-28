@@ -41,7 +41,7 @@ export default function ProductLoading() {
 
           <div className="flex items-center gap-10 pt-4">
             <div className="w-32 h-10 bg-[#D4AF37]/20 rounded-lg animate-pulse"></div>
-            <div className="flex-grow h-14 bg-primary-container/10 rounded-lg animate-pulse"></div>
+            <div className="grow h-14 bg-primary-container/10 rounded-lg animate-pulse"></div>
           </div>
         </div>
       </div>

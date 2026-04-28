@@ -80,7 +80,7 @@ export default function Preloader() {
             opacity: 0,
             transition: { duration: 1, ease: [0.76, 0, 0.24, 1] }
           }}
-          className="fixed inset-0 z-[100] bg-[#050505] flex flex-col items-center justify-center"
+          className="fixed inset-0 z-100 bg-[#050505] flex flex-col items-center justify-center"
         >
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">

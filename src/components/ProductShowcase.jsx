@@ -108,7 +108,7 @@ export default function ProductShowcase() {
                       sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 450px"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="px-1">
                   <h3 className="font-headline-md text-xs md:text-lg lg:text-headline-md text-[#D4AF37] mb-0.5 md:mb-2">{product.name}</h3>

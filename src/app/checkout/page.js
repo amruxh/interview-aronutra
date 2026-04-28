@@ -86,7 +86,7 @@ export default function CheckoutPage() {
                       </div>
                     ))}
                   </div>
-                  <div className="h-[1px] bg-white/5 my-6"></div>
+                  <div className="h-px bg-white/5 my-6"></div>
                   <div className="flex justify-between text-xl">
                     <span>Total</span>
                     <span className="text-primary-container font-light">${cartTotal.toLocaleString()}</span>

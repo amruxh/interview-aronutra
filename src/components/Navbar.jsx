@@ -97,7 +97,7 @@ export default function Navbar() {
                   href={link.href}
                 >
                   {link.name}
-                  <span className={`absolute -bottom-1 left-0 w-full h-[1px] bg-primary transition-transform duration-500 origin-right scale-x-0 group-hover:scale-x-100 group-hover:origin-left ${pathname === link.href ? 'scale-x-100' : ''}`}></span>
+                  <span className={`absolute -bottom-1 left-0 w-full h-px bg-primary transition-transform duration-500 origin-right scale-x-0 group-hover:scale-x-100 group-hover:origin-left ${pathname === link.href ? 'scale-x-100' : ''}`}></span>
                 </Link>
               </motion.div>
             ))}

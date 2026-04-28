@@ -168,7 +168,7 @@ export default function ProductPage({ params }) {
               </div>
               <button 
                 onClick={() => addToCart({ id, ...product })}
-                className="w-full sm:flex-grow bg-primary-container text-on-primary-container py-4 md:py-5 font-label-caps text-[10px] md:text-label-caps hover:scale-[1.02] transition-transform flex items-center justify-center gap-4 gold-glow uppercase tracking-widest"
+                className="w-full sm:grow bg-primary-container text-on-primary-container py-4 md:py-5 font-label-caps text-[10px] md:text-label-caps hover:scale-[1.02] transition-transform flex items-center justify-center gap-4 gold-glow uppercase tracking-widest"
               >
                 <ShoppingBag size={18} /> Add to Collection
               </button>
