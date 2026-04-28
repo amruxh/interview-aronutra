@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AroNutra | The Twelve-Fold Liquid Gold Collection
+
+An ultra-premium, cinematic e-commerce experience for AroNutra's flagship honey collection. This platform is designed to showcase the artisanal process, the rich heritage of Wayanad, and the diverse flavor profiles of nature's finest nectar.
+
+## Design System & Color Palette
+
+The visual identity of AroNutra is built on a "Deep Forest Luxury" theme, combining dark, organic tones with prestigious metallic accents.
+
+### Core Colors
+- **Primary Gold**: `#D4AF37` / `#F2CA50`
+  - Used for call-to-actions, branding, and key highlights. Represents the "Liquid Gold" nature of the product.
+- **Deep Forest Background**: `#0D1511`
+  - A sophisticated, near-black green that provides a rich, organic foundation for the glassmorphic UI.
+- **Off-White / Bone**: `#DCE5DE` / `#FDF5E6`
+  - Used for primary typography to ensure high legibility against the dark background while maintaining a soft, premium feel.
+- **Sage Accents**: `#A5D0BC`
+  - Used for secondary highlights and natural elements, connecting the brand back to the flora of Wayanad.
+
+### Visual Effects
+- **Glassmorphism**: High-blur panels with subtle gold borders to create depth and a modern luxury feel.
+- **Gold Glow**: Delicate box-shadows and ambient pulses to draw attention to premium containers and products.
+- **Cinematic Transitions**: GSAP-powered scroll triggers and Framer Motion animations for a "living" interface.
 
 ## Getting Started
 
@@ -6,31 +27,14 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Important Note
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> [!IMPORTANT]
+> **This submission is for evaluation purposes only and not for commercial use without permission.**
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created with passion by Amruth*
