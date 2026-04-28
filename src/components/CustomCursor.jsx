@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 export default function CustomCursor() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
@@ -13,12 +14,23 @@ export default function CustomCursor() {
   const y = useSpring(cursorY, springConfig);
 
   useEffect(() => {
+    const mql = window.matchMedia('(pointer: fine)');
+    const checkVisibility = () => {
+      setIsVisible(mql.matches && window.innerWidth >= 768);
+    };
+
+    checkVisibility();
+    mql.addEventListener('change', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+
     const moveCursor = (e) => {
+      if (!isVisible) return;
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
     };
 
     const handleMouseOver = (e) => {
+      if (!isVisible) return;
       const target = e.target;
       if (
         target.tagName === 'A' ||
@@ -37,10 +49,14 @@ export default function CustomCursor() {
     window.addEventListener('mouseover', handleMouseOver);
 
     return () => {
+      mql.removeEventListener('change', checkVisibility);
+      window.removeEventListener('resize', checkVisibility);
       window.removeEventListener('mousemove', moveCursor);
       window.removeEventListener('mouseover', handleMouseOver);
     };
-  }, [cursorX, cursorY]);
+  }, [cursorX, cursorY, isVisible]);
+
+  if (!isVisible) return null;
 
   return (
     <>
